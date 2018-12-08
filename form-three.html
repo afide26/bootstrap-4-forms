@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <title>Zenva Forms</title>
+</head>
+
+<body class="bg-light">
+  <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a href="/" class="navbar-brand">
+      <h3 class="text-light"><img src="img/zenva-logo-final-logo-SVG-white.svg" alt="Zenva Logo" width="125" class="img-fluid">
+        Bootstrap
+        4 Forms</h3>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/form-Two.html">Form Two</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/form-three.html">Form Three</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="container my-4">
+    <!-- Form -->
+    <form action="#" novalidate class="needs-validation">
+      <div class="form-row">
+        <div class="col-md-4 mb3">
+          <label for="val1">First Name:</label>
+          <input type="text" class="form-control" name="val1" id="val1" placeholder="First Name" required>
+          <div class="valid-tooltip">Looks good!</div>
+          <div class="invalid-tooltip">Looks bad!</div>
+        </div>
+        <div class="col-md-4 mb3">
+          <label for="val2">Last Name:</label>
+          <input type="text" class="form-control" name="val2" id="val2" placeholder="Last Name" required>
+          <div class="valid-tooltip">Looks good!</div>
+          <div class="invalid-tooltip">Looks bad!</div>
+        </div>
+        <div class="col-md-4 mb3">
+          <label for="val3">Username:</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="UserPrepend">@</span>
+            </div>
+            <input type="text" class="form-control" name="username" id="username" placeholder="Username" required
+              aria-describedby="UserPrepend">
+            <div class="invalid-tooltip">Please choose a unique and valid username!</div>
+          </div>
+        </div>
+      </div>
+      <div class="submit py-5">
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </div>
+    </form>
+    <!-- End of Form -->
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
