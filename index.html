@@ -18,89 +18,35 @@
   </div>
   <div class="container my-4">
     <!-- Form -->
-    <form action="#">
-      <fieldset class="form-group">
-        <legend class="text-secondary">Personal Info</legend>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="email">Email address</label>
-            <input type="email" class="form-control form-control-lg" name="email" id="email" placeholder="Enter email address"
-              aria-describedby="emailHelp">
-            <small id="emailHelp" class="text-light text-muted">We never share email addresses</small>
-          </div>
-          <div class="form-group col-md-6">
-            <label for="password">Password</label>
-            <input type="password" name="password" class="form-control" id="password" placeholder="Type your password here">
-          </div>
+    <form action="#" novalidate class="needs-validation">
+      <div class="form-row">
+        <div class="col-md-4 mb3">
+          <label for="val1">First Name:</label>
+          <input type="text" class="form-control" name="val1" id="val1" placeholder="First Name" required>
+          <div class="valid-tooltip">Looks good!</div>
+          <div class="invalid-tooltip">Looks bad!</div>
         </div>
-        <div class="form-group">
-          <label for="address">Address</label>
-          <input type="text" name="address" class="form-control" id="address" placeholder="Your Address">
+        <div class="col-md-4 mb3">
+          <label for="val2">Last Name:</label>
+          <input type="text" class="form-control" name="val2" id="val2" placeholder="Last Name" required>
+          <div class="valid-tooltip">Looks good!</div>
+          <div class="invalid-tooltip">Looks bad!</div>
         </div>
-        <div class="form-group">
-          <label for="address2">Address 2</label>
-          <input type="text" name="address2" class="form-control" id="address2" placeholder="Apartment, Studio or Floor">
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="city">City</label>
-            <input type="text" class="form-control" id="city" name="city" placeholder="City">
-          </div>
-          <div class="form-group col-md-4">
-            <label for="choose">State</label>
-            <select name="state" id="state" class="form-control">
-              <option selected>Choose...</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-            </select>
-          </div>
-          <div class="form-group col-md-2">
-            <label for="zip">Zip</label>
-            <input type="text" class="form-control" id="zip" name="zip" Placeholder="Zip">
+        <div class="col-md-4 mb3">
+          <label for="val3">Username:</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="UserPrepend">@</span>
+            </div>
+            <input type="text" class="form-control" name="username" id="username" placeholder="Username" required
+              aria-describedby="UserPrepend">
+            <div class="invalid-tooltip">Please choose a unique and valid username!</div>
           </div>
         </div>
-        <div class="form-group">
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="gridCheck" name="gridCheck">
-            <label class="form-check-label" for="gridCheck">Check Me Out</label>
-          </div>
-        </div>
-      </fieldset>
-
-      <fieldset class="form-group">
-        <legend class="text-secondary">Check boxes</legend>
-        <input type="text" class="form-control" placeholder="You can put read only text here..." readonly>
-        <div class="form-check">
-          <input type="checkbox" value="" class="form-check-input" id="c1">
-          <label for="c1" class="form-check-label">Plain Checkbox 1</label>
-        </div>
-        <div class="form-check">
-          <input type="checkbox" value="" class="form-check-input" id="c2">
-          <label for="c2" class="form-check-label">Plain Checkbox 2</label>
-        </div>
-        <div class="form-check">
-          <input disabled type="checkbox" value="" class="form-check-input" id="c3">
-          <label for="c3" class="form-check-label">Disabled Checkbox 3</label>
-        </div>
-      </fieldset>
-
-      <fieldset class="form-group">
-        <legend class="text-secondary">Radio Buttons</legend>
-        <div class="form-check">
-          <input name="radioFamily" type="radio" class="form-check-input" id="radio1" value="option1" checked>
-          <label for="radio1" class="form-check-label">Radio Button 1</label>
-        </div>
-        <div class="form-check">
-          <input name="radioFamily" type="radio" class="form-check-input" id="radio2" value="option2">
-          <label for="radio2" class="form-check-label">Radio Button 2</label>
-        </div>
-        <div class="form-check" disabled>
-          <input name="radioFamily" type="radio" class="form-check-input" id="radio3" value="option3" disabled>
-          <label for="radio3" class="form-check-label">Radio Button 3</label>
-        </div>
-      </fieldset>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+      <div class="submit py-5">
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </div>
     </form>
     <!-- End of Form -->
   </div>
@@ -108,6 +54,7 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
